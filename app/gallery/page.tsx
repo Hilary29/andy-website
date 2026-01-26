@@ -126,22 +126,22 @@ export default function GalleryPage() {
     }, [activeCategory]);
 
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-black/85">
             {/* Page Header */}
             <section className="pt-32 pb-16 md:pt-40 md:pb-24">
                 <div className="max-w-7xl mx-auto px-6 text-center">
                     <h1 className="text-5xl md:text-6xl lg:text-7xl font-light text-primary-500 tracking-[0.2em] mb-6 uppercase">
                         Complete Gallery
                     </h1>
-                    <div className="w-20 h-px bg-[#2C1810] mx-auto mb-8" />
-                    <p className="text-[#5C4A3A] text-base md:text-lg tracking-wide max-w-2xl mx-auto">
+                    <div className="w-20 h-px bg-primary-900 mx-auto mb-8" />
+                    <p className="text-primary-50 text-base md:text-lg tracking-wide max-w-2xl mx-auto">
                         A comprehensive collection of realistic pencil art and contemporary works
                     </p>
                 </div>
             </section>
 
             {/* Filter Buttons */}
-            <section className="sticky top-20 md:top-24 bg-white/95 backdrop-blur-md z-30 py-6 md:py-8 border-b border-primary-900/15">
+            <section className="sticky top-20 md:top-24 bg-black/35 backdrop-blur-md z-30 py-6 md:py-8 border-b border-primary-900/15">
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="flex flex-wrap gap-3 md:gap-4 justify-center">
                         {categories.map((category) => (
@@ -187,14 +187,14 @@ export default function GalleryPage() {
                                 {/* Text Content */}
                                 <div className="space-y-2 px-2">
                                     <div className="flex items-start justify-between gap-2">
-                                        <h3 className="text-primary-900 text-sm font-light tracking-wide flex-1">
+                                        <h3 className="text-white text-sm font-light tracking-wide flex-1">
                                             <span className="font-semibold">{item.title}</span> 
                                         </h3>
                                     </div>
-                                    <p className="text-primary-900 text-xs tracking-wider uppercase font-light">
+                                    <p className="text-primary-500 text-xs tracking-wider uppercase font-light">
                                         {item.year} · {item.medium}
                                     </p>
-                                    <p className="text-primary-600 text-xs leading-relaxed italic">
+                                    <p className="text-primary-50 text-xs leading-relaxed italic">
                                         {item.description}
                                     </p>
              
@@ -215,14 +215,10 @@ export default function GalleryPage() {
             {/* Statistics Section */}
             <section className="bg-primary-900 text-white py-16 md:py-24">
                 <div className="max-w-7xl mx-auto px-6">
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-8 text-center">
                         <div>
                             <p className="text-4xl md:text-5xl font-light mb-2">{allGalleryItems.length}+</p>
                             <p className="text-sm tracking-widest uppercase">Total Works</p>
-                        </div>
-                        <div>
-                            <p className="text-4xl md:text-5xl font-light mb-2">{categories.length - 1}</p>
-                            <p className="text-sm tracking-widest uppercase">Categories</p>
                         </div>
                         <div>
                             <p className="text-4xl md:text-5xl font-light mb-2">100%</p>
@@ -237,7 +233,7 @@ export default function GalleryPage() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-16 md:py-24 bg-white border-t border-primary-900/10">
+            <section className="py-16 md:py-24 border-t border-primary-900/10">
                 <div className="max-w-7xl mx-auto px-6 text-center">
                     <h2 className="text-3xl md:text-4xl font-light text-primary-900 tracking-[0.2em] mb-6 uppercase">
                         Commission Your Artwork
