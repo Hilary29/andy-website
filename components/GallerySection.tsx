@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface GalleryItem {
   id: number;
@@ -113,14 +114,14 @@ export default function GallerySection() {
         </div>
 
         {/* Load More Button */}
-        <div className="flex justify-center mt-20">
+        <Link href="/gallery" className="flex justify-center mt-20">
           <button
-            className="px-12 py-3 border border-[#2C1810] text-[#2C1810] text-sm font-light tracking-widest uppercase transition-all duration-500 hover:bg-[#2C1810] hover:text-white"
+            className="px-12 py-3 border border-primary-500 text-primary-500 text-sm font-light tracking-widest uppercase transition-all duration-500 cursor-pointer hover:text-primary-500"
             aria-label="Load more gallery items"
           >
             Load More
           </button>
-        </div>
+        </Link>
       </div>
 
       {/* Styles */}
