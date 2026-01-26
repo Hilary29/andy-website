@@ -18,7 +18,7 @@ const galleryItems: GalleryItem[] = [
     year: '2023',
     medium: 'Charcoal',
     description: 'Realistic charcoal portrait of 50 cent',
-    image: 'https://b2-cdn-proxy.bechmanstudios.workers.dev/1761585688254_gallery/1761585681829_new50.jpg',
+    image: '/images/10.jpg',
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const galleryItems: GalleryItem[] = [
     year: '2023',
     medium: 'Graphite',
     description: 'Portrait study in graphite',
-    image: 'https://b2-cdn-proxy.bechmanstudios.workers.dev/1761163285901_gallery/1761163274952_IMG_5386.JPEG',
+    image: '/images/11.jpg',  
   },
   {
     id: 3,
@@ -34,7 +34,7 @@ const galleryItems: GalleryItem[] = [
     year: '2023',
     medium: 'Pencil',
     description: 'Detailed nature and landscape composition',
-    image: 'https://b2-cdn-proxy.bechmanstudios.workers.dev/1761585688254_gallery/1761585681829_new50.jpg',
+    image: '/images/32.jpg',
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ const galleryItems: GalleryItem[] = [
     year: '2023',
     medium: 'Mixed Media',
     description: 'Exploration of form and shadow',
-    image: 'https://b2-cdn-proxy.bechmanstudios.workers.dev/1761163285901_gallery/1761163274952_IMG_5386.JPEG',
+    image: '/images/23.jpg',
   },
   {
     id: 5,
@@ -50,7 +50,7 @@ const galleryItems: GalleryItem[] = [
     year: '2023',
     medium: 'Charcoal',
     description: 'Contemporary portrait collection',
-    image: 'https://b2-cdn-proxy.bechmanstudios.workers.dev/1761585688254_gallery/1761585681829_new50.jpg',
+    image: '/images/24.jpg',
   },
   {
     id: 6,
@@ -58,7 +58,7 @@ const galleryItems: GalleryItem[] = [
     year: '2023',
     medium: 'Graphite',
     description: 'Study of light and shadow interaction',
-    image: 'https://b2-cdn-proxy.bechmanstudios.workers.dev/1761163285901_gallery/1761163274952_IMG_5386.JPEG',
+    image: '/images/27.jpg',
   },
 ];
 

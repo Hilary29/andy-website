@@ -25,8 +25,13 @@ export default function Header() {
         {/* Logo */}
         <div className="flex justify-between items-center shrink-0">
           <Link href="/" className="text-lg md:text-xl text-white font-semibold tracking-wide">
-            arinze stanley
-            
+            <Image
+              alt="Andy"
+              src="/images/andy.svg"
+              width={56}
+              height={56}
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
           </Link>
         </div>
 

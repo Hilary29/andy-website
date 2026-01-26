@@ -232,9 +232,9 @@ export default function HeroSection() {
             }}
           >
             <span className="bg-gradient-to-b from-white to-gray-300 bg-clip-text text-transparent">
-              BECHMAN
+              ANDY
             </span>
-            <span className="text-primary-500 mt-2">STUDIOS</span>
+            <span className="text-primary-500 mt-2">DONFACK</span>
           </h1>
 
           {/* Divider */}
