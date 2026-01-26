@@ -9,7 +9,10 @@ export default function HeroSection() {
   const { ref: parallaxRef, offset } = useParallax(0.3);
 
   useEffect(() => {
-    setIsLoaded(true);
+    const frameId = requestAnimationFrame(() => {
+      setIsLoaded(true);
+    });
+    return () => cancelAnimationFrame(frameId);
   }, []);
 
   const images = [
@@ -106,7 +109,7 @@ export default function HeroSection() {
               fill
               className="object-cover opacity-85 brightness-100"
             />
-            <div className="absolute inset-0 bg-gradient-to-l from-black/15 to-transparent" />
+            <div className="absolute inset-0 bg-linear-to-l from-black/15 to-transparent" />
           </div>
 
           {/* Filler - 1x1 */}
@@ -117,7 +120,7 @@ export default function HeroSection() {
               fill
               className="object-cover opacity-75 brightness-95"
             />
-            <div className="absolute inset-0 bg-gradient-to-br from-black/10 to-transparent" />
+            <div className="absolute inset-0 bg-linear-to-br from-black/10 to-transparent" />
           </div>
         </div>
 
@@ -165,7 +168,7 @@ export default function HeroSection() {
               fill
               className="object-cover opacity-90 brightness-105 contrast-105"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/35 to-transparent" />
+            <div className="absolute inset-0 bg-linear-to-t from-black/35 to-transparent" />
           </div>
 
           {/* Image 5 - 3x3 */}
@@ -176,13 +179,13 @@ export default function HeroSection() {
               fill
               className="object-cover opacity-85 brightness-100"
             />
-            <div className="absolute inset-0 bg-gradient-to-tr from-black/15 to-transparent" />
+            <div className="absolute inset-0 bg-linear-to-tr from-black/15 to-transparent" />
           </div>
         </div>
 
         {/* Overlay Gradients */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60" />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-black/40" />
+        <div className="absolute inset-0 bg-linear-to-b from-black/50 via-black/30 to-black/60" />
+        <div className="absolute inset-0 bg-linear-to-r from-black/40 via-transparent to-black/40" />
       </div>
 
       {/* Video Background */}

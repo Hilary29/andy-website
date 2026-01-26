@@ -114,7 +114,7 @@ export default function Header() {
             ))}
             <Link
               href="/contact"
-              className="capitalize text-base text-orange-500 py-2.5 mt-2 font-medium transition-colors hover:text-orange-400"
+              className="capitalize text-base text-primary-500 py-2.5 mt-2 font-medium transition-colors hover:text-primary-600"
               onClick={() => setMobileMenuOpen(false)}
             >
               Contact

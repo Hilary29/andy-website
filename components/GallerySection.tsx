@@ -116,7 +116,7 @@ export default function GallerySection() {
         {/* Load More Button */}
         <Link href="/gallery" className="flex justify-center mt-20">
           <button
-            className="px-12 py-3 border border-primary-500 text-primary-500 text-sm font-light tracking-widest uppercase transition-all duration-500 cursor-pointer hover:text-primary-500"
+            className="px-12 py-3 rounded-full border border-primary-500 text-primary-500 hover:bg-black/5 font-medium tracking-widest uppercase transition-all duration-500 cursor-pointer hover:text-primary-500"
             aria-label="Load more gallery items"
           >
             Load More
