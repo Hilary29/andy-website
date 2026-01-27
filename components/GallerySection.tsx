@@ -69,11 +69,11 @@ export default function GallerySection() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="mb-16 text-center relative z-10">
-          <h1 className="text-4xl md:text-5xl font-light text-[#2C1810] tracking-[0.3em] mb-6 uppercase">
+          <h1 className="text-4xl md:text-5xl font-semibold text-primary-900 tracking-[0.3em] mb-6 uppercase">
             Gallery
           </h1>
-          <div className="w-16 h-px bg-[#2C1810] mx-auto mb-6" />
-          <p className="text-[#5C4A3A] text-sm tracking-wide italic">
+          <div className="w-16 h-px bg-primary-900 mx-auto mb-6" />
+          <p className="text-primary-600 text-base tracking-wide italic">
             A curated collection of contemporary works
           </p>
         </div>
@@ -99,13 +99,13 @@ export default function GallerySection() {
 
               {/* Text Content */}
               <div className="space-y-1 px-1">
-                <p className="text-[#2C1810] text-xs tracking-wide font-light font-serif">
-                  <span className="font-normal">{item.id}.</span> {item.title}
+                <p className="text-black text-lg tracking-wide font-light font-serif">
+                  <span className="font-normal">{item.title}</span> 
                 </p>
-                <p className="text-[#5C4A3A] text-[10px] tracking-wider uppercase font-serif">
+                <p className="text-primary-900 text-base tracking-wider uppercase font-serif">
                   {item.year} · {item.medium}
                 </p>
-                <p className="text-[#7A6A5A] text-[10px] leading-relaxed italic pt-1 font-serif">
+                <p className="text-primary-900 text-base leading-relaxed italic pt-1 font-serif">
                   {item.description}
                 </p>
               </div>
@@ -116,7 +116,7 @@ export default function GallerySection() {
         {/* Load More Button */}
         <Link href="/gallery" className="flex justify-center mt-20">
           <button
-            className="px-12 py-3 rounded-full border border-primary-500 text-primary-500 hover:bg-black/5 font-medium tracking-widest uppercase transition-all duration-500 cursor-pointer hover:text-primary-500"
+            className="px-12 py-3 rounded-full border border-primary-500 text-primary-500 hover:bg-black/15 font-medium tracking-widest uppercase transition-all duration-500 cursor-pointer "
             aria-label="Load more gallery items"
           >
             Load More

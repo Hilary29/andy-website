@@ -20,7 +20,8 @@ const allGalleryItems: GalleryItem[] = [
         year: '2025',
         medium: 'Charcoal',
         description: 'Realistic charcoal portrait of 50 cent',
-        image: '/images/1.jpg', 
+        image: '/images/10.jpg',
+        category: 'Commissions',
     },
     {
         id: 2,
@@ -28,8 +29,8 @@ const allGalleryItems: GalleryItem[] = [
         year: '2025',
         medium: 'Graphite',
         description: 'Portrait study in graphite',
-        image: '/images/2.jpg',
-        
+        image: '/images/24.jpg',
+
     },
     {
         id: 3,
@@ -37,7 +38,7 @@ const allGalleryItems: GalleryItem[] = [
         year: '2025',
         medium: 'Pencil',
         description: 'Detailed nature and landscape composition',
-        image: '/images/3.jpg', 
+        image: '/images/11.jpg',
     },
     {
         id: 4,
@@ -45,7 +46,7 @@ const allGalleryItems: GalleryItem[] = [
         year: '2025',
         medium: 'Mixed Media',
         description: 'Exploration of form and shadow',
-        image: '/images/4.jpg', 
+        image: '/images/6.jpg',
     },
     {
         id: 5,
@@ -53,7 +54,7 @@ const allGalleryItems: GalleryItem[] = [
         year: '2025',
         medium: 'Charcoal',
         description: 'Contemporary portrait collection',
-        image: '/images/5.jpg', 
+        image: '/images/1.jpg',
     },
     {
         id: 6,
@@ -61,7 +62,7 @@ const allGalleryItems: GalleryItem[] = [
         year: '2025',
         medium: 'Graphite',
         description: 'Study of light and shadow interaction',
-        image: '/images/6.jpg',
+        image: '/images/32.jpg',
     },
     {
         id: 7,
@@ -69,7 +70,7 @@ const allGalleryItems: GalleryItem[] = [
         year: '2024',
         medium: 'Pencil',
         description: 'Contemporary urban scenery',
-        image: '/images/7.jpg', 
+        image: '/images/13.jpg',
     },
     {
         id: 8,
@@ -77,7 +78,7 @@ const allGalleryItems: GalleryItem[] = [
         year: '2024',
         medium: 'Charcoal',
         description: 'Classical still life arrangement',
-        image: '/images/10.jpg',
+        image: '/images/3.jpg',
     },
     {
         id: 9,
@@ -93,7 +94,7 @@ const allGalleryItems: GalleryItem[] = [
         year: '2025',
         medium: 'Mixed Media',
         description: 'Composition and balance exploration',
-        image: '/images/24.jpg', 
+        image: '/images/2.jpg',
     },
     {
         id: 11,
@@ -101,7 +102,7 @@ const allGalleryItems: GalleryItem[] = [
         year: '2024',
         medium: 'Charcoal',
         description: 'Expressive figure sketching',
-        image: '/images/27.jpg', 
+        image: '/images/27.jpg',
     },
     {
         id: 12,
@@ -109,11 +110,90 @@ const allGalleryItems: GalleryItem[] = [
         year: '2024',
         medium: 'Pencil',
         description: 'Mountain landscape study',
-        image: '/images/28.jpg', 
+        image: '/images/28.jpg',
+        category: 'Original Works',
     },
+    {
+        id: 13,
+        title: 'Mountain Peak',
+        year: '2024',
+        medium: 'Pencil',
+        description: 'Mountain landscape study',
+        image: '/images/4.jpg',
+        category: 'Original Works',
+    },
+    {
+        id: 14,
+        title: 'Mountain Peak',
+        year: '2024',
+        medium: 'Pencil',
+        description: 'Mountain landscape study',
+        image: '/images/31.jpg',
+        category: 'Original Works',
+    },
+    {
+        id: 15,
+        title: 'Mountain Peak',
+        year: '2024',
+        medium: 'Pencil',
+        description: 'Mountain landscape study',
+        image: '/images/5.jpg',
+        category: 'Original Works',
+    },
+    {
+        id: 16,
+        title: 'Mountain Peak',
+        year: '2024',
+        medium: 'Pencil',
+        description: 'Mountain landscape study',
+        image: '/images/23.jpg',
+        category: 'Original Works',
+    },
+
+
+
+
+
+    {
+        id: 17,
+        title: 'Mountain Peak',
+        year: '2024',
+        medium: 'Pencil',
+        description: 'Mountain landscape study',
+        image: '/images/28.jpg',
+        category: 'Original Works',
+    },
+    {
+        id: 18,
+        title: 'Mountain Peak',
+        year: '2024',
+        medium: 'Pencil',
+        description: 'Mountain landscape study',
+        image: '/images/28.jpg',
+        category: 'Original Works',
+    },
+    {
+        id: 19,
+        title: 'Mountain Peak',
+        year: '2024',
+        medium: 'Pencil',
+        description: 'Mountain landscape study',
+        image: '/images/28.jpg',
+        category: 'Original Works',
+    },
+    {
+        id: 20,
+        title: 'Mountain Peak',
+        year: '2024',
+        medium: 'Pencil',
+        description: 'Mountain landscape study',
+        image: '/images/4.jpg',
+        category: 'Original Works',
+    },
+
 ];
 
-const categories = ['All', 'Portraits', 'Landscapes', 'Abstract', 'Still Life'];
+const categories = ['All', 'Commissions', 'Original Works'];
 
 export default function GalleryPage() {
     const [activeCategory, setActiveCategory] = useState('All');
@@ -149,8 +229,8 @@ export default function GalleryPage() {
                                 key={category}
                                 onClick={() => setActiveCategory(category)}
                                 className={`px-6 py-2 text-base md:text-sm tracking-wider uppercase font-light transition-all duration-300 border ${activeCategory === category
-                                        ? 'bg-primary-900 text-white font-semibold border-primary-900'
-                                        : 'bg-transparent text-primary-900 border-primary-900 hover:bg-primary-900 hover:text-white'
+                                    ? 'bg-primary-900 text-white font-semibold border-primary-900'
+                                    : 'bg-transparent text-primary-600 border-primary-600 hover:bg-primary-900 hover:text-white'
                                     }`}
                             >
                                 {category}
@@ -187,17 +267,17 @@ export default function GalleryPage() {
                                 {/* Text Content */}
                                 <div className="space-y-2 px-2">
                                     <div className="flex items-start justify-between gap-2">
-                                        <h3 className="text-white text-sm font-light tracking-wide flex-1">
-                                            <span className="font-semibold">{item.title}</span> 
+                                        <h3 className="text-white text-lg font-light tracking-wide flex-1">
+                                            <span className="font-semibold">{item.title}</span>
                                         </h3>
                                     </div>
-                                    <p className="text-primary-500 text-xs tracking-wider uppercase font-light">
+                                    <p className="text-primary-500 text-base tracking-wider uppercase font-light">
                                         {item.year} · {item.medium}
                                     </p>
-                                    <p className="text-primary-50 text-xs leading-relaxed italic">
+                                    <p className="text-primary-50 text-base leading-relaxed italic">
                                         {item.description}
                                     </p>
-             
+
                                 </div>
                             </div>
                         ))}
@@ -206,7 +286,7 @@ export default function GalleryPage() {
                     {/* No Results */}
                     {filteredItems.length === 0 && (
                         <div className="text-center py-20">
-                            <p className="text-[#5C4A3A] text-lg">No works found in this category.</p>
+                            <p className="text-primary-50 text-lg">No works found in this category.</p>
                         </div>
                     )}
                 </div>
@@ -235,13 +315,13 @@ export default function GalleryPage() {
             {/* CTA Section */}
             <section className="py-16 md:py-24 border-t border-primary-900/10">
                 <div className="max-w-7xl mx-auto px-6 text-center">
-                    <h2 className="text-3xl md:text-4xl font-light text-primary-900 tracking-[0.2em] mb-6 uppercase">
+                    <h2 className="text-3xl md:text-4xl font-semibold text-primary-900 tracking-[0.2em] mb-6 uppercase">
                         Commission Your Artwork
                     </h2>
                     <p className="text-primary-500 text-base mb-10 max-w-2xl mx-auto">
                         Interested in a custom realistic pencil portrait? Get in touch to discuss your vision and commission a unique piece.
                     </p>
-                    <button className="px-12 py-3 rounded-full border border-primary-500 text-primary-500 text-sm font-semibold tracking-widest uppercase transition-all duration-500 hover:bg-primary-600 hover:text-white">
+                    <button className="px-12 py-3 rounded-full border border-primary-500 text-primary-500 text-sm font-semibold tracking-widest uppercase transition-all duration-500 hover:bg-white/10 ">
                         Start Commission
                     </button>
                 </div>
