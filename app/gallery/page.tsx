@@ -9,7 +9,7 @@ interface GalleryItem {
     title: string;
     year: string;
     medium: string;
-    description: string;
+    description?: string;
     image: string;
     category?: string;
 }
@@ -17,109 +17,98 @@ interface GalleryItem {
 const allGalleryItems: GalleryItem[] = [
     {
         id: 1,
-        title: '50 cent portrait',
-        year: '2025',
+        title: 'Denise',
+        year: '2024',
         medium: 'Charcoal',
-        description: 'Realistic charcoal portrait of 50 cent',
         image: '/images/10.jpg',
         category: 'Commissions',
     },
     {
         id: 2,
-        title: 'Alex',
-        year: '2025',
-        medium: 'Graphite',
-        description: 'Portrait study in graphite',
+        title: 'Happiness',
+        year: '2020',
+        medium: 'Pencil',
         image: '/images/24.jpg',
         category: 'Original Works',
     },
     {
         id: 3,
-        title: 'Nature Study',
+        title: 'Baudoin',
         year: '2025',
-        medium: 'Pencil',
-        description: 'Detailed nature and landscape composition',
+        medium: 'charcoal',
         image: '/images/11.jpg',
         category: 'Commissions',
     },
     {
         id: 4,
-        title: 'Abstract Forms',
+        title: 'Ruth',
         year: '2025',
-        medium: 'Mixed Media',
-        description: 'Exploration of form and shadow',
+        medium: 'charcoal, colored pencils',
         image: '/images/6.jpg',
         category: 'Commissions',
     },
     {
         id: 5,
-        title: 'Portrait Series',
+        title: 'Marie',
         year: '2025',
-        medium: 'Charcoal',
+        medium: 'Pencil',
         description: 'Contemporary portrait collection',
         image: '/images/1.jpg',
         category: 'Commissions',
     },
     {
         id: 6,
-        title: 'Light and Shadow',
-        year: '2025',
-        medium: 'Graphite',
-        description: 'Study of light and shadow interaction',
+        title: 'Manuela',
+        year: '2026',
+        medium: 'Charcoal',
         image: '/images/32.jpg',
         category: 'Commissions',
     },
     {
         id: 7,
-        title: 'Urban Landscape',
-        year: '2024',
-        medium: 'Pencil',
-        description: 'Contemporary urban scenery',
+        title: 'Zendaya',
+        year: '2025, In progress',
+        medium: 'Charcoal',
         image: '/images/13.jpg',
         category: 'Original Works',
     },
     {
         id: 8,
-        title: 'Still Life',
-        year: '2024',
+        title: 'Y\'a Levis',
+        year: '2023',
         medium: 'Charcoal',
-        description: 'Classical still life arrangement',
         image: '/images/3.jpg',
         category: 'Original Works',
     },
     {
         id: 9,
-        title: 'Portrait Detail',
-        year: '2024',
-        medium: 'Graphite',
-        description: 'Close-up portrait study',
+        title: 'Sara',
+        year: '2025',
+        medium: 'charcoal, Pencil',
         image: '/images/22.jpg',
         category: 'Commissions',
     },
     {
         id: 10,
-        title: 'Composition Study',
-        year: '2025',
-        medium: 'Mixed Media',
-        description: 'Composition and balance exploration',
+        title: 'Flow',
+        year: '2022',
+        medium: 'charcoal',
         image: '/images/2.jpg',
         category: 'Original Works',
     },
     {
         id: 11,
-        title: 'Expressive Sketch',
-        year: '2024',
+        title: 'Océane',
+        year: '2025',
         medium: 'Charcoal',
-        description: 'Expressive figure sketching',
         image: '/images/27.jpg',
         category: 'Commissions',
     },
     {
         id: 12,
-        title: 'Mountain Peak',
+        title: 'Fearless',
         year: '2024',
-        medium: 'Pencil',
-        description: 'Mountain landscape study',
+        medium: 'charcoal, Pencil',
         image: '/images/28.jpg',
         category: 'Original Works',
     },
@@ -127,14 +116,14 @@ const allGalleryItems: GalleryItem[] = [
         id: 13,
         title: 'Mountain Peak',
         year: '2024',
-        medium: 'Pencil',
+        medium: 'pencil, charcoal',
         description: 'Mountain landscape study',
         image: '/images/33.jpeg',
         category: 'Commissions',
     },
     {
         id: 14,
-        title: 'Mountain Peak',
+        title: 'Order',
         year: '2024',
         medium: 'Pencil',
         description: 'Mountain landscape study',
@@ -143,7 +132,7 @@ const allGalleryItems: GalleryItem[] = [
     },
     {
         id: 15,
-        title: 'Mountain Peak',
+        title: 'Order',
         year: '2024',
         medium: 'Pencil',
         description: 'Mountain landscape study',
@@ -152,17 +141,16 @@ const allGalleryItems: GalleryItem[] = [
     },
     {
         id: 16,
-        title: 'Mountain Peak',
-        year: '2024',
-        medium: 'Pencil',
-        description: 'Mountain landscape study',
+        title: 'Strengthless',
+        year: '2021',
+        medium: 'Charcoal',
         image: '/images/23.jpg',
         category: 'Original Works',
     },
     {
         id: 17,
-        title: 'Mountain Peak',
-        year: '2024',
+        title: 'Framed order',
+        year: '2025',
         medium: 'Pencil',
         description: 'Mountain landscape study',
         image: '/images/4.jpg',
@@ -170,19 +158,17 @@ const allGalleryItems: GalleryItem[] = [
     },
     {
         id: 18,
-        title: 'Mountain Peak',
-        year: '2024',
-        medium: 'Pencil',
-        description: 'Mountain landscape study',
+        title: 'Order',
+        year: '2025',
+        medium: 'Charcoal, Pencil',
         image: '/images/34.jpeg',
         category: 'Commissions',
     },
     {
         id: 19,
-        title: 'Mountain Peak',
-        year: '2024',
-        medium: 'Pencil',
-        description: 'Mountain landscape study',
+        title: 'Framed order',
+        year: '2025',
+        medium: 'Charcoal',
         image: '/images/5.jpg',
         category: 'Commissions',
     },
@@ -267,12 +253,10 @@ export default function GalleryPage() {
                                         </h3>
                                         <Badge className='bg-primary-500/10 text-gray-300'>{item.category}</Badge>
                                     </div>
-                                    <p className="text-primary-500 text-base tracking-wider uppercase font-light">
-                                        {item.year} · {item.medium}
+                                    <p className="text-primary-500 text-base tracking-wider ">
+                                        {item.year} · <span className='uppercase font-light'>{item.medium}</span>
                                     </p>
-                                    <p className="text-primary-50 text-base leading-relaxed italic">
-                                        {item.description}
-                                    </p>
+
 
                                 </div>
                             </div>
@@ -293,7 +277,7 @@ export default function GalleryPage() {
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-8 text-center">
                         <div>
-                           {/* <p className="text-4xl md:text-5xl font-light mb-2">{allGalleryItems.length}+</p> */}
+                            {/* <p className="text-4xl md:text-5xl font-light mb-2">{allGalleryItems.length}+</p> */}
                             <p className="text-4xl md:text-5xl font-light mb-2">20+</p>
                             <p className="text-sm tracking-widest uppercase">Total Works</p>
                         </div>
