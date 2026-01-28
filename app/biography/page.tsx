@@ -26,9 +26,7 @@ export default function page() {
                     <section className="flex-1 text-lg sm:text-xl text-white/90 font-medium leading-relaxed space-y-6">
                         <p className="text-justify">
                             Born in 2001 in Yaounde, Andy&apos;s Donfack journey into art has been one of discovery and learning. Despite having a formal background in engineering, his heart has always found solace in the strokes of a pencil and the shades of charcoal.
-
                         </p>
-
                         <p className="text-justify">
                             Based in Cameroon, Andy is a drawing artist who works with paper, pencils, and charcoal to bring smiles to faces through his art.                        </p>
                     </section>

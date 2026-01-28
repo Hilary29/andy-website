@@ -274,7 +274,7 @@ export default function HeroSection() {
               textShadow: 'rgba(0, 0, 0, 0.5) 0px 1px 5px',
             }}
           >
-            HYPERREALISTIC PENCIL ART · TIMELESS COMMISSIONS
+            REALISTIC PENCIL ART · TIMELESS COMMISSIONS
           </p>
 
           {/* Glow effect */}

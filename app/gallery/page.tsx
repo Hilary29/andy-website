@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import Image from 'next/image';
+import { Badge } from '@/components/ui/badge';
 
 interface GalleryItem {
     id: number;
@@ -30,7 +31,7 @@ const allGalleryItems: GalleryItem[] = [
         medium: 'Graphite',
         description: 'Portrait study in graphite',
         image: '/images/24.jpg',
-
+        category: 'Original Works',
     },
     {
         id: 3,
@@ -39,6 +40,7 @@ const allGalleryItems: GalleryItem[] = [
         medium: 'Pencil',
         description: 'Detailed nature and landscape composition',
         image: '/images/11.jpg',
+        category: 'Commissions',
     },
     {
         id: 4,
@@ -47,6 +49,7 @@ const allGalleryItems: GalleryItem[] = [
         medium: 'Mixed Media',
         description: 'Exploration of form and shadow',
         image: '/images/6.jpg',
+        category: 'Commissions',
     },
     {
         id: 5,
@@ -55,6 +58,7 @@ const allGalleryItems: GalleryItem[] = [
         medium: 'Charcoal',
         description: 'Contemporary portrait collection',
         image: '/images/1.jpg',
+        category: 'Commissions',
     },
     {
         id: 6,
@@ -63,6 +67,7 @@ const allGalleryItems: GalleryItem[] = [
         medium: 'Graphite',
         description: 'Study of light and shadow interaction',
         image: '/images/32.jpg',
+        category: 'Commissions',
     },
     {
         id: 7,
@@ -71,6 +76,7 @@ const allGalleryItems: GalleryItem[] = [
         medium: 'Pencil',
         description: 'Contemporary urban scenery',
         image: '/images/13.jpg',
+        category: 'Original Works',
     },
     {
         id: 8,
@@ -79,6 +85,7 @@ const allGalleryItems: GalleryItem[] = [
         medium: 'Charcoal',
         description: 'Classical still life arrangement',
         image: '/images/3.jpg',
+        category: 'Original Works',
     },
     {
         id: 9,
@@ -87,6 +94,7 @@ const allGalleryItems: GalleryItem[] = [
         medium: 'Graphite',
         description: 'Close-up portrait study',
         image: '/images/22.jpg',
+        category: 'Commissions',
     },
     {
         id: 10,
@@ -95,6 +103,7 @@ const allGalleryItems: GalleryItem[] = [
         medium: 'Mixed Media',
         description: 'Composition and balance exploration',
         image: '/images/2.jpg',
+        category: 'Original Works',
     },
     {
         id: 11,
@@ -103,6 +112,7 @@ const allGalleryItems: GalleryItem[] = [
         medium: 'Charcoal',
         description: 'Expressive figure sketching',
         image: '/images/27.jpg',
+        category: 'Commissions',
     },
     {
         id: 12,
@@ -119,8 +129,8 @@ const allGalleryItems: GalleryItem[] = [
         year: '2024',
         medium: 'Pencil',
         description: 'Mountain landscape study',
-        image: '/images/4.jpg',
-        category: 'Original Works',
+        image: '/images/33.jpeg',
+        category: 'Commissions',
     },
     {
         id: 14,
@@ -129,7 +139,7 @@ const allGalleryItems: GalleryItem[] = [
         medium: 'Pencil',
         description: 'Mountain landscape study',
         image: '/images/31.jpg',
-        category: 'Original Works',
+        category: 'Commissions',
     },
     {
         id: 15,
@@ -137,8 +147,8 @@ const allGalleryItems: GalleryItem[] = [
         year: '2024',
         medium: 'Pencil',
         description: 'Mountain landscape study',
-        image: '/images/5.jpg',
-        category: 'Original Works',
+        image: '/images/35.jpeg',
+        category: 'Commissions',
     },
     {
         id: 16,
@@ -149,19 +159,14 @@ const allGalleryItems: GalleryItem[] = [
         image: '/images/23.jpg',
         category: 'Original Works',
     },
-
-
-
-
-
     {
         id: 17,
         title: 'Mountain Peak',
         year: '2024',
         medium: 'Pencil',
         description: 'Mountain landscape study',
-        image: '/images/28.jpg',
-        category: 'Original Works',
+        image: '/images/4.jpg',
+        category: 'Commissions',
     },
     {
         id: 18,
@@ -169,8 +174,8 @@ const allGalleryItems: GalleryItem[] = [
         year: '2024',
         medium: 'Pencil',
         description: 'Mountain landscape study',
-        image: '/images/28.jpg',
-        category: 'Original Works',
+        image: '/images/34.jpeg',
+        category: 'Commissions',
     },
     {
         id: 19,
@@ -178,19 +183,9 @@ const allGalleryItems: GalleryItem[] = [
         year: '2024',
         medium: 'Pencil',
         description: 'Mountain landscape study',
-        image: '/images/28.jpg',
-        category: 'Original Works',
+        image: '/images/5.jpg',
+        category: 'Commissions',
     },
-    {
-        id: 20,
-        title: 'Mountain Peak',
-        year: '2024',
-        medium: 'Pencil',
-        description: 'Mountain landscape study',
-        image: '/images/4.jpg',
-        category: 'Original Works',
-    },
-
 ];
 
 const categories = ['All', 'Commissions', 'Original Works'];
@@ -215,13 +210,13 @@ export default function GalleryPage() {
                     </h1>
                     <div className="w-20 h-px bg-primary-900 mx-auto mb-8" />
                     <p className="text-primary-50 text-base md:text-lg tracking-wide max-w-2xl mx-auto">
-                        A comprehensive collection of realistic pencil art and contemporary works
+                        A comprehensive collection of realistic pencil art and modern works
                     </p>
                 </div>
             </section>
 
             {/* Filter Buttons */}
-            <section className="sticky top-20 md:top-24 bg-black/35 backdrop-blur-md z-30 py-6 md:py-8 border-b border-primary-900/15">
+            <section className=" top-20 md:top-24 bg-black/35 backdrop-blur-md z-30 py-6 md:py-8 border-b border-primary-900/15">
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="flex flex-wrap gap-3 md:gap-4 justify-center">
                         {categories.map((category) => (
@@ -270,6 +265,7 @@ export default function GalleryPage() {
                                         <h3 className="text-white text-lg font-light tracking-wide flex-1">
                                             <span className="font-semibold">{item.title}</span>
                                         </h3>
+                                        <Badge className='bg-primary-500/10 text-gray-300'>{item.category}</Badge>
                                     </div>
                                     <p className="text-primary-500 text-base tracking-wider uppercase font-light">
                                         {item.year} · {item.medium}
@@ -297,7 +293,8 @@ export default function GalleryPage() {
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-8 text-center">
                         <div>
-                            <p className="text-4xl md:text-5xl font-light mb-2">{allGalleryItems.length}+</p>
+                           {/* <p className="text-4xl md:text-5xl font-light mb-2">{allGalleryItems.length}+</p> */}
+                            <p className="text-4xl md:text-5xl font-light mb-2">20+</p>
                             <p className="text-sm tracking-widest uppercase">Total Works</p>
                         </div>
                         <div>
